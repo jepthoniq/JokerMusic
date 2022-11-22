@@ -1,0 +1,61 @@
+{
+    "name": "سورس ميوزك ابن الدورة ",
+    "description": "اهلا بك في تنصيب ميوزك ابن الدورة مجانا @x02x2",
+    "logo": "https://l.top4top.io/p_2363dcjiw1.jpg",
+    "keywords": [
+        "Telegram",
+        "MusicPlayer",
+        "jepthon",
+        "VideoPlayer"
+    ],
+    "repository": "https://github.com/rida7712/jed",
+    "env": {
+        "SESSION": {
+            "description": "هنا ضع كود البايروكرام",
+            "required": true
+        },
+        "API_ID": {
+            "description": "هنا ضع الايبب ايدي",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "العلامه التي تضعها قبل اسم الامر مثل ( $ • -) تستطيع تغييرها ",
+            "required": false,
+            "value": "$"
+        },
+        "API_HASH": {
+            "description": "هنا ضع الايبي هاش",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "هنا ضع ايدي حسابك كمطور للبوت بمكنك وضع اكثر من شخص بوضع ايدي المستخدم",
+            "required": true
+        },
+        "OWNER_NAME": {
+            "description": "ضع هنا اسم المطور",
+            "required": true
+        },
+        "CHANNEL": {
+            "description": "هنا ضع معرف قناتك او كروبك بدون @",
+            "required": true
+        }        
+        
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+        {
+            "urlk": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        }
+        
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
