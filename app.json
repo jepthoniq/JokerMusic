@@ -44,10 +44,10 @@
     "addons": [],
     "buildpacks": [
         {
-            "url": "koyeb/python"
+            "url": "heroku/python"
         }
         {
-            "urlk": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
         }
         
     ],
