@@ -4,11 +4,6 @@ from config import call_py
 from Musicjepthon.التشغيل import arq
 from Musicjepthon.helpers import web_server
 
-app = web.AppRunner(await web_server())
-await app.setup()
-bind_address = "0.0.0.0"
-redaport = Config.PORT
-await web.TCPSite(app, bind_address, redaport).start()
         
 async def main():
     await call_py.start()
@@ -19,6 +14,11 @@ async def main():
     ------------------
 """
     )
+    app = web.AppRunner(await web_server())
+    await app.setup()
+    bind_address = "0.0.0.0"
+    redaport = Config.PORT
+    await web.TCPSite(app, bind_address, redaport).start()
     await idle()
     await arq.close()
 
