@@ -2,8 +2,8 @@ TgCrypto
 asyncio
 ffmpeg-python
 pyrogram==1.4.16
-git+https://github.com/yt-dlp/yt-dlp
-git+https://github.com/pytgcalls/pytgcalls
+git+https://github.com/yt-dlp/yt-dlp@master
+git+https://github.com/pytgcalls/pytgcalls@master
 youtube-search-python==1.4.9
 youtube-search
 httpx==0.13.3
